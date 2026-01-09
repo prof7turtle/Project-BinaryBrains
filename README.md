@@ -75,9 +75,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ## Tech Stack
 
 ### Frontend
-- React
-- HTML5
-- CSS3
+- React 18
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- React Router
 - Vite (build tool)
 
 ### Backend
