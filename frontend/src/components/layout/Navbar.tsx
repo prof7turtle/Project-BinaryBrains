@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -64,11 +64,11 @@ const Navbar = () => {
       <div className="container-tight">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center group">
             <img
               src={logo}
               alt="BinaryBrains"
-              className="h-10 w-10 object-contain rounded-lg group-hover:scale-105 transition-transform"
+              className="size-24 object-contain rounded-lg group-hover:scale-105 transition-transform"
             />
             <span className="font-display font-extrabold text-2xl text-foreground hidden sm:block tracking-tight">
               Binary<span className="text-primary">Brains</span>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Instagram, Mail } from "lucide-react";
-import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -29,9 +29,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="BinaryBrains" className="h-10 w-10 rounded-lg bg-background p-1" />
-              <span className="font-display font-bold text-xl">BinaryBrains</span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logo} alt="BinaryBrains" className="size-24 rounded-lg p-1" />
+              <span className="font-display font-bold text-xl">Binary<span className="font-display font-bold text-xl text-primary">Brains</span></span>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
               The premier tech club at Dr. D. Y. Patil Institute of Technology, Pune.
