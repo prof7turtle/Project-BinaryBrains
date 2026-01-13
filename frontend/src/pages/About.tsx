@@ -45,42 +45,36 @@ const About = () => {
 </section>
 
       {/* Mission & Vision */}
-      <section className="section-padding">
-        <div className="container-tight">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Mission */}
-            <div className="card-elevated p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center">
-                  <Target className="h-6 w-6 text-primary-foreground" />
-                </div>
-                <h2 className="text-2xl font-display font-bold text-foreground">Our Mission</h2>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
+      <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-10">
+
+          <div className="bg-white border-l-4 border-orange-500 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Our <span className="text-orange-500">Mission</span>
+        </h2>
+        <p className="text-gray-600 leading-relaxed">
                 To create a vibrant community of tech enthusiasts who learn, build, and 
                 innovate together. We aim to bridge the gap between academic learning 
                 and industry requirements by providing hands-on experience, mentorship, 
                 and real-world project opportunities.
-              </p>
-            </div>
+        </p>
+      </div>
 
             {/* Vision */}
-            <div className="card-elevated p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center">
-                  <Eye className="h-6 w-6 text-primary-foreground" />
-                </div>
-                <h2 className="text-2xl font-display font-bold text-foreground">Our Vision</h2>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                To become the leading student-run tech community that produces industry-ready 
-                developers and innovators. We envision a future where every member has the 
-                skills, network, and confidence to make a meaningful impact in the tech world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <div className="bg-white border-l-4 border-orange-500 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Our <span className="text-orange-500">Vision</span>
+          </h2>
+        <p className="text-gray-600 leading-relaxed">
+          We envision BinaryBrains as a leading student-driven tech community that
+          inspires innovation, confidence, and professional growth.
+       </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* What We Do */}
       <section className="section-padding bg-muted/30">
