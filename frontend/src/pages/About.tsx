@@ -23,32 +23,26 @@ const About = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding relative overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/team-photo-bb.JPG)' }}
-        >
-          <div className="absolute inset-0 bg-background/70"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container-tight relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              About Us
-            </span>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-              We Are <span className="gradient-text">BinaryBrains</span>
-            </h1>
-            <p className="text-lg text-muted-foreground">
+      <section className="relative py-20">
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url(/team-photo-bb.JPG)" }}
+  >
+    <div className="absolute inset-0 bg-black/60"></div>
+  </div>
+
+  <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+    <p className="text-orange-400 font-medium mb-3">About Us</p>
+    <h1 className="text-4xl md:text-5xl font-bold mb-5">
+      We Are <span className="text-orange-400">BinaryBrains</span>
+    </h1>
+    <p className="text-gray-200 text-lg leading-relaxed">
               The premier technical club at Dr. D. Y. Patil Institute of Technology, Pune. 
               We're a community of passionate developers, innovators, and tech enthusiasts 
               working together to build the future.
-            </p>
-          </div>
-        </div>
-      </section>
+    </p>
+  </div>
+</section>
 
       {/* Mission & Vision */}
       <section className="section-padding">
