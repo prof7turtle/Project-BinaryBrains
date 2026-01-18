@@ -77,7 +77,7 @@ const Events = () => {
               Learn, Build, <span className="gradient-text">Compete</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              From workshops to hackathons, we organize events that help our members grow
+              From workshops to hackathons, We organize events that help our members grow
             </p>
           </div>
         </div>
