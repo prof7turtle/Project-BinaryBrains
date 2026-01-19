@@ -255,7 +255,7 @@ const Hackathon = () => {
           </div>
 
           <p className="text-center text-muted-foreground">
-            + Certificates for all participants • Goodies from sponsors • Networking opportunities
+             • Certificates for all participants • Goodies from sponsors • Networking opportunities
           </p>
         </div>
       </section>
@@ -270,9 +270,9 @@ const Hackathon = () => {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <div className="relative">
+            <div className="relative  ">
               {/* Timeline Line */}
-              <div className="absolute left-6 md:left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-primary/50 to-primary/20 rounded-full" />
+              <div className="absolute left-6 md:left-8 top-0 bottom-24 w-1 bg-gradient-to-b from-primary via-primary/50 to-primary/20 rounded-full" />
               
               {timeline.map((item, index) => (
                 <div key={item.phase} className="relative flex gap-6 md:gap-8 pb-8 last:pb-0">
