@@ -46,7 +46,7 @@ export const FloatingNav = ({ navItems, className, extraAction }: FloatingNavPro
           transition={{ duration: 0.2 }}
           ref={ref}
           className={cn(
-            "fixed inset-x-0 top-4 z-[100] mx-auto w-[calc(100vw-1rem)] max-w-5xl rounded-2xl border border-border bg-background/85 px-2 py-2 shadow-lg backdrop-blur-md md:w-auto md:max-w-fit md:rounded-full md:px-4",
+            "fixed inset-x-0 top-4 z-[100] mx-auto w-[calc(100vw-1rem)] max-w-5xl rounded-2xl border border-border bg-black/75 px-2 py-2 shadow-lg backdrop-blur-md md:w-auto md:max-w-fit md:rounded-full md:px-4",
             className,
           )}
         >
@@ -98,7 +98,7 @@ export const FloatingNav = ({ navItems, className, extraAction }: FloatingNavPro
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.16 }}
-                className="md:hidden absolute inset-x-0 top-[calc(100%+0.5rem)] rounded-2xl border border-border bg-background px-3 py-3 shadow-xl"
+                className="md:hidden absolute inset-x-0 top-[calc(100%+0.5rem)] rounded-2xl border border-border bg-black px-3 py-3 shadow-xl"
               >
                 <div className="grid grid-cols-2 gap-2">
                   {navItems.map((item, idx) => (
