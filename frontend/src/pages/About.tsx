@@ -45,12 +45,12 @@ const About = () => {
 </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
+      <section className="py-20 bg-black">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10">
 
-          <div className="bg-white border-l-4 border-orange-500 rounded-xl p-8 shadow-sm hover:shadow-md transition">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <div className="bg-black  text-white  border-l-4 border-orange-500 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+            <h2 className="text-3xl font-bold mb-4">
               Our <span className="text-orange-500">Mission</span>
         </h2>
         <p className="text-gray-600 leading-relaxed">

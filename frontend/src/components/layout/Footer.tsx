@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="relative overflow-hidden text-white"
+      className="relative isolate min-h-[65vh] overflow-hidden text-white"
       style={{ background: "#F87216" }}
     >
       {/* Dark radial vignette */}
@@ -33,14 +33,14 @@ const Footer = () => {
       />
 
       {/* Top content */}
-      <div className="relative z-10 flex flex-col sm:flex-row justify-between gap-10 px-8 pt-12 pb-4 max-w-screen-xl mx-auto">
+      <div className="relative z-10 mx-auto grid w-full max-w-screen-xl grid-cols-1 gap-10 px-4 pt-10 pb-4 sm:px-6 md:grid-cols-2 lg:px-8">
         {/* Nav links */}
-        <nav className="flex flex-col gap-1">
+        <nav className="grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 md:flex md:flex-col md:gap-1">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className="text-white/90 hover:text-white font-display font-semibold text-xl leading-tight transition-colors"
+              className="text-white/90 hover:text-white font-display font-semibold text-lg sm:text-xl leading-tight transition-colors"
             >
               {link.name}
             </Link>
@@ -48,19 +48,25 @@ const Footer = () => {
         </nav>
 
         {/* Right side */}
-        <div className="flex flex-col justify-between gap-8 sm:items-end">
+        <div className="flex flex-col justify-between gap-7 md:items-end">
           <div>
             <p className="text-white/80 text-sm mb-1 font-medium">
               DIT Pune, Maharashtra, India
             </p>
             <a
               href="mailto:binarybrains.dit@gmail.com"
-              className="text-white/70 hover:text-white text-sm transition-colors"
+              className="block text-white/70 hover:text-white text-sm transition-colors"
             >
               binarybrains.dit@gmail.com
             </a>
+            <a
+              href="mailto:23510628.dit@dypvp.edu.in"
+              className="block text-white/70 hover:text-white text-sm transition-colors"
+            >
+              23510628.dit@dypvp.edu.in
+            </a>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3">
             {socialLinks.map((s) => (
               <a
                 key={s.label}
@@ -68,7 +74,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                className="rounded-lg bg-white/10 p-2 hover:bg-white/20 transition-colors"
               >
                 <s.icon className="h-5 w-5" />
               </a>
@@ -81,17 +87,18 @@ const Footer = () => {
       <div className="relative z-10 overflow-hidden leading-none select-none px-2">
         <p
           className="font-display font-bold text-white whitespace-nowrap"
-          style={{ fontSize: "clamp(4rem, 16vw, 18rem)", lineHeight: 0.85 }}
+          style={{ fontSize: "clamp(3.6rem, 16vw, 18rem)", lineHeight: 0.85 }}
         >
           BinaryBrains
         </p>
       </div>
 
       {/* Bottom bar */}
-      <div className="relative z-10 flex flex-col sm:flex-row justify-between items-center gap-2 px-8 py-4 border-t border-white/10 text-white/50 text-sm max-w-screen-xl mx-auto w-full">
-        <span>2026 BinaryBrains DIT. All rights reserved.</span>
+      <div className="relative z-10 mx-auto flex w-full max-w-screen-xl flex-col gap-3 border-t border-white/10 px-4 py-4 text-sm text-white/60 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+        <span>Copyright 2026 BinaryBrains DIT. All rights reserved.</span>
+        <span className="text-white/50">Made with orange by the BinaryBrains Team</span>
 
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-4 sm:gap-6">
           <a
             href="https://instagram.com/binarybrains.dit"
             target="_blank"

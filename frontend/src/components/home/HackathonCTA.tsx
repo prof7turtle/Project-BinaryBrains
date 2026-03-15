@@ -6,12 +6,9 @@ const HackathonCTA = () => {
   return (
     <section className="relative overflow-hidden bg-black py-20 md:py-28">
       {/* Background effects */}
-      <div className="absolute inset-0 bg-black" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(248,112,20,0.18),transparent_30%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(248,112,20,0.08),transparent_35%)]" />
 
       <div className="container-tight relative z-10">
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur-xl p-8 md:p-12 lg:p-16 text-center shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+        <div className="relative overflow-hidden rounded-[2rem]backdrop-blur-xl p-8 md:p-12 lg:p-16 text-center shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
           {/* inner glow */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(248,112,20,0.12),transparent_40%)] pointer-events-none" />
 
@@ -23,7 +20,7 @@ const HackathonCTA = () => {
             </div>
 
             {/* Title */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-display font-bold text-white mb-4 tracking-tight">
               AlgoHeist{" "}
               <span className="text-[#F87014] drop-shadow-[0_0_16px_rgba(248,112,20,0.28)]">
                 2026

@@ -42,7 +42,7 @@ const HeroSection = () => {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[0.95] tracking-tight mb-6">
-            Building Developers.
+            Binary Brains
             <br />
             <span className="text-[#F87014] drop-shadow-[0_0_18px_rgba(248,112,20,0.30)]">
               Creating Impact.
