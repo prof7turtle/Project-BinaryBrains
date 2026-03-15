@@ -97,7 +97,7 @@ const FeaturesSection = () => {
               What We Do
             </span>
             <h2 className="text-3xl font-display font-bold text-white md:text-5xl">
-              Focus Areas in a Modern Bento Grid
+              Focus Areas
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-white/60 md:text-lg">
               We cultivate expertise across multiple domains, preparing our members
