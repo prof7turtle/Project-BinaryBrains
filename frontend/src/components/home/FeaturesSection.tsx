@@ -35,7 +35,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="section-padding bg-muted/30">
+    <section className="section-padding bg-black">
       <div className="container-tight">
         {/* Section Header */}
         <div className="text-center mb-16">

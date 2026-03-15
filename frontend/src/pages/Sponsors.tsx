@@ -116,7 +116,7 @@ const Sponsors = () => {
       </section>
 
       {/* Target Audience */}
-      <section className="section-padding bg-muted/30">
+      <section className="section-padding bg-black">
         <div className="container-tight">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -165,7 +165,7 @@ const Sponsors = () => {
       </section>
 
       {/* Sponsorship Types */}
-      <section className="section-padding bg-muted/30">
+      <section className="section-padding bg-black">
         <div className="container-tight">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -208,7 +208,7 @@ const Sponsors = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="section-padding bg-muted/30">
+      <section className="section-padding bg-black">
         <div className="container-tight">
           <div className="card-elevated p-8 md:p-12 text-center max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">

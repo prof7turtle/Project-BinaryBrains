@@ -64,7 +64,7 @@ const Gallery = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding bg-muted/30">
+      <section className="section-padding bg-black">
         <div className="container-tight">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
