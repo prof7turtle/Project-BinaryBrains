@@ -37,7 +37,7 @@ const HackathonCTA = () => {
             <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-10">
               <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-white/85">
                 <Calendar className="h-5 w-5 text-[#F87014]" />
-                <span className="font-medium">28th February 2026</span>
+                <span className="font-medium">22nd March 2026</span>
               </div>
 
               <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-white/85">
