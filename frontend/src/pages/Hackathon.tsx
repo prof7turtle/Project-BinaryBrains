@@ -16,11 +16,11 @@ import {
 import Silk from "@/components/Silk";
 
 const timeline = [
-  { phase: "Registration Opens", date: "1st February 2026" },
-  { phase: "Registration Closes", date: "20th February 2026" },
-  { phase: "Round 1 (Online)", date: "21st February 2026, 10:00 AM" },
-  { phase: "Round 2 (Offline)", date: "28th February 2026, 12:00 PM" },
-  { phase: "Results & Prize Distribution", date: "28th February 2026, 4:00 PM" },
+  { phase: "Registration Opens", date: "1st March 2026, 10:00 PM IST" },
+  { phase: "Registration Closes", date: "20th March 2026, 10:00 PM IST" },
+  { phase: "Round 1 (Offline)", date: "22nd March 2026, 11:00 AM - 12:40 PM" },
+  { phase: "Round 2 (Offline)", date: "22nd March 2026, 2:00 PM - 4:00 PM" },
+  { phase: "Results & Prize Distribution", date: "22nd March 2026" },
 ];
 
 const tracks = [
@@ -86,7 +86,7 @@ const Hackathon = () => {
                       Date
                     </span>
                   </div>
-                  <p className="text-white font-medium">21st - 28th February 2026</p>
+                  <p className="text-white font-medium">22nd March 2026</p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-5 py-4 text-left shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
@@ -96,7 +96,9 @@ const Hackathon = () => {
                       Venue
                     </span>
                   </div>
+                  <a href="https://maps.app.goo.gl/TMwPtnhSzaGQBnMd7" >
                   <p className="text-white font-medium">DIT Pune Campus</p>
+                  </a>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-5 py-4 text-left shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
@@ -164,11 +166,27 @@ const Hackathon = () => {
                 <ul className="space-y-3 text-white/75">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Duration: 2.5 Hours
+                    Date : 22nd March 2026
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Mode: Online
+                    Duration: 100 minutes
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Time: 11:00 am to 12:40 pm
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Mode: Offline
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Platform: Hackerrank
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Location: DIT Pune Campus
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
@@ -193,15 +211,31 @@ const Hackathon = () => {
                 <ul className="space-y-3 text-white/75">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Duration: 3 Hours
+                    Date : 22nd March 2026
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Mode: Offline, Proctored
+                    Duration: 120 minutes
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Time: 2:00 pm to 4:00 pm
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Mode: Offline
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Platform: Hackerrank
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
                     Location: DIT Pune Campus
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Objective: Teams compete to win AlgoHeist 2026.
                   </li>
                 </ul>
               </div>
@@ -365,7 +399,7 @@ const Hackathon = () => {
                   Ready to Test Your Skills?
                 </h2>
                 <p className="text-white/70 mb-6 max-w-xl mx-auto">
-                  Register now and compete with the best programmers. Limited spots available.
+                  Step into an intense coding arena where logic, speed, and algorithms decide the winner.
                 </p>
                 <a href="https://unstop.com/hackathons/algoheist-2026-ultimate-dsa-showdown-dr-dy-patil-institute-of-technology-1658552">
                 <Button
