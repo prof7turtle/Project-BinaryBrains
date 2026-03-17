@@ -1,79 +1,74 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code2, Users, Trophy } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Aurora from "../Aurora";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+    <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-black">
+      {/* Aurora Background */}
+      <div className="absolute inset-0 z-0">
+        <Aurora
+          colorStops={["#F87014", "#B19EEF", "#F87014"]}
+          blend={0.5}
+          amplitude={1.0}
+          speed={1}
+        />
       </div>
 
-      <div className="container-tight section-padding relative">
-        <div className="max-w-4xl mx-auto text-center">
+      {/* Overlays */}
+      <div className="absolute inset-0 z-[1] bg-black/60" />
+      <div className="absolute inset-0 z-[2] bg-[radial-gradient(circle_at_top,rgba(248,112,20,0.20),transparent_35%)]" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-b from-black/35 via-black/55 to-black" />
+
+      {/* Subtle grid */}
+      <div className="absolute inset-0 z-[2] opacity-[0.06] [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:60px_60px] sm:[background-size:72px_72px]" />
+
+      <div className="container-tight relative z-10 w-full px-4 sm:px-6 section-padding py-20 sm:py-24 md:py-28">
+        <div className="mx-auto max-w-5xl text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8 animate-fade-up">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </span>
-            AlgoHeist 2026 • 28th February
+          <div className="mb-5 sm:mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-[#F87014]/25 bg-white/5 px-3 py-2 sm:px-4 text-xs sm:text-sm font-medium text-white/80 backdrop-blur-md shadow-[0_0_30px_rgba(248,112,20,0.10)]">
+            <span className="h-2 w-2 rounded-full bg-[#F87014] shadow-[0_0_10px_rgba(248,112,20,0.8)] shrink-0" />
+            <span className="truncate">DIT Pune’s Tech Community</span>
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 animate-fade-up stagger-1">
-            Where <span className="gradient-text">Code</span> Meets
+          <h1 className="mb-5 sm:mb-6 text-4xl font-display font-bold leading-[1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            Binary Brains
             <br />
-            <span className="gradient-text">Innovation</span>
+            <span className="text-[#F87014] drop-shadow-[0_0_18px_rgba(248,112,20,0.30)]">
+              Build. Learn. Lead.
+            </span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up stagger-2">
-            BinaryBrains is the premier tech club at DIT Pune, fostering a community of 
-            passionate developers, innovative thinkers, and future tech leaders.
+          <p className="mx-auto mb-8 sm:mb-10 max-w-xs text-sm leading-relaxed text-white/70 sm:max-w-xl sm:text-base md:max-w-2xl md:text-lg lg:text-xl">
+            A student-led tech community at DIT Pune where developers, designers,
+            and problem solvers come together to build projects, host events,
+            compete in hackathons, and grow through real collaboration.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up stagger-3">
-            <Link to="/hackathon">
-              <Button variant="hero" size="xl">
+          <div className="mx-auto flex w-full max-w-md flex-col items-stretch justify-center gap-3 sm:max-w-none sm:flex-row sm:items-center sm:gap-4">
+            <Link to="/hackathon" className="w-full sm:w-auto">
+              <Button
+                size="xl"
+                className="w-full bg-[#F87014] text-white hover:bg-[#df6412] border border-[#F87014]/60 shadow-[0_0_30px_rgba(248,112,20,0.28)] sm:w-auto"
+              >
                 Register for AlgoHeist
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </Link>
-            <Link to="/sponsors">
-              <Button variant="heroOutline" size="xl">
+
+            <Link to="/sponsors" className="w-full sm:w-auto">
+              <Button
+                size="xl"
+                variant="outline"
+                className="w-full border-white/15 bg-white/5 text-white backdrop-blur-md hover:bg-white/10 hover:text-white sm:w-auto"
+              >
                 Become a Sponsor
               </Button>
             </Link>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-up stagger-4">
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mx-auto mb-3">
-                <Users className="h-6 w-6" />
-              </div>
-              <div className="text-3xl font-display font-bold text-foreground">500+</div>
-              <div className="text-sm text-muted-foreground">Active Members</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mx-auto mb-3">
-                <Code2 className="h-6 w-6" />
-              </div>
-              <div className="text-3xl font-display font-bold text-foreground">50+</div>
-              <div className="text-sm text-muted-foreground">Events Organized</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mx-auto mb-3">
-                <Trophy className="h-6 w-6" />
-              </div>
-              <div className="text-3xl font-display font-bold text-foreground">20+</div>
-              <div className="text-sm text-muted-foreground">Hackathon Wins</div>
-            </div>
           </div>
         </div>
       </div>
