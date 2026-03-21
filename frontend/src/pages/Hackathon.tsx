@@ -18,9 +18,10 @@ import Silk from "@/components/Silk";
 const timeline = [
   { phase: "Registration Opens", date: "1st March 2026, 10:00 PM IST" },
   { phase: "Registration Closes", date: "20th March 2026, 10:00 PM IST" },
-  { phase: "Round 1 (Offline)", date: "22nd March 2026, 11:00 AM - 12:40 PM" },
-  { phase: "Round 2 (Offline)", date: "22nd March 2026, 2:00 PM - 4:00 PM" },
-  { phase: "Results & Prize Distribution", date: "22nd March 2026" },
+  { phase: "Reporting Time", date: "22nd March 2026, 8:00 AM (Late entries not allowed)" },
+  { phase: "Round 1 (Offline)", date: "22nd March 2026, 9:00 AM - 10:00 AM (Sharp start)" },
+  { phase: "Round 2 (Final)", date: "22nd March 2026, 10:30 AM - 12:00 PM" },
+  { phase: "Prize Distribution", date: "22nd March 2026, 12:15 PM - 12:25 PM" },
 ];
 
 const tracks = [
@@ -108,7 +109,7 @@ const Hackathon = () => {
                       Duration
                     </span>
                   </div>
-                  <p className="text-white font-medium">5.5 Hours Total</p>
+                  <p className="text-white font-medium">4 Hours 25 Minutes Total</p>
                 </div>
               </div>
 
@@ -143,10 +144,7 @@ const Hackathon = () => {
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
                 Event Format
-              </h2>
-              <p className="text-white/65">
-                Two rounds. No fluff. Only problem solving.
-              </p>
+              </h2>              
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -170,11 +168,19 @@ const Hackathon = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Duration: 100 minutes
+                    Reporting Time: 8:00 am
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Time: 11:00 am to 12:40 pm
+                    Duration: 60 minutes
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Time: 9:00 am to 10:00 am (starts sharp)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
+                    Late entries will not be allowed
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
@@ -215,11 +221,11 @@ const Hackathon = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Duration: 120 minutes
+                    Duration: 90 minutes
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
-                    Time: 2:00 pm to 4:00 pm
+                    Time: 10:30 am to 12:00 pm
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-[#FA7518]" />
@@ -267,7 +273,7 @@ const Hackathon = () => {
         </section>
 
         {/* Prizes */}
-        <section className="relative z-10 py-14 md:py-18 border-t border-white/5">
+        {/* <section className="relative z-10 py-14 md:py-18 border-t border-white/5">
           <div className="container-tight">
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
@@ -345,7 +351,7 @@ const Hackathon = () => {
               Certificates for all participants • Goodies from sponsors • Networking opportunities
             </p>
           </div>
-        </section>
+        </section> */}
 
         {/* Timeline */}
         <section className="relative z-10 py-14 md:py-18 border-t border-white/5">
