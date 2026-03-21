@@ -131,8 +131,7 @@ const Contact = () => {
               </h1>
 
               <p className="text-lg text-white/65 max-w-2xl mx-auto leading-relaxed">
-                Have questions, want to join, or looking to sponsor? Reach out
-                and say something useful.
+                Have questions or want to join? Reach out and say something useful.
               </p>
             </div>
           </section>
@@ -306,12 +305,11 @@ const Contact = () => {
 
                 <div className="rounded-[2rem] border border-[#F87014]/20 bg-[#F87014]/[0.06] backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-6 md:p-8">
                   <h3 className="font-display font-semibold text-lg text-white mb-2">
-                    Interested in Sponsoring?
+                    Need Help Quickly?
                   </h3>
 
                   <p className="text-white/65 text-sm mb-5 leading-relaxed">
-                    For sponsorship inquiries, contact the organizer directly
-                    instead of sending a vague message and hoping for magic.
+                    Contact the organizer directly for event support and quick responses.
                   </p>
 
                   <div className="text-sm">

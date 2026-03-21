@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,10 +9,10 @@ import {
   Laptop,
   ArrowRight,
   CheckCircle2,
-  Gift,
-  HelpCircle,
 } from "lucide-react";
 import Silk from "@/components/Silk";
+import ideavoLogo from "@/assets/wordmark-dark.png";
+import unstopLogo from "@/assets/Unstop/Unstop_idGARQA_PG_0.png";
 
 const timeline = [
   { phase: "Registration Opens", date: "1st March 2026, 10:00 PM IST" },
@@ -124,15 +123,30 @@ const Hackathon = () => {
                   <ArrowRight className="h-5 w-5" />
                 </Button>
                 </a>
-                <Link to="/sponsors">
-                  <Button
-                    size="xl"
-                    variant="outline"
-                    className="border-white/20 bg-white/5 text-white backdrop-blur-md hover:bg-white/10 hover:text-white"
-                  >
-                    Sponsor This Event
-                  </Button>
-                </Link>
+              </div>
+
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+                <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-5 py-4 text-center shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+                  <p className="text-xs uppercase tracking-[0.14em] text-white/60 mb-3">
+                    Sponsored By
+                  </p>
+                  <img
+                    src={ideavoLogo}
+                    alt="IDEAVO AI"
+                    className="h-10 md:h-12 w-auto mx-auto object-contain"
+                  />
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-5 py-4 text-center shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+                  <p className="text-xs uppercase tracking-[0.14em] text-white/60 mb-3">
+                    Powered By
+                  </p>
+                  <img
+                    src={unstopLogo}
+                    alt="Unstop"
+                    className="h-10 md:h-12 w-auto mx-auto object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -271,87 +285,6 @@ const Hackathon = () => {
             </div>
           </div>
         </section>
-
-        {/* Prizes */}
-        {/* <section className="relative z-10 py-14 md:py-18 border-t border-white/5">
-          <div className="container-tight">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-                Prizes & Rewards
-              </h2>
-              <p className="text-white/65 flex items-center justify-center gap-2">
-                <Gift className="h-5 w-5 text-[#FA7518]" />
-                Exciting prizes to be revealed soon
-              </p>
-            </div>
-
-            <div className="flex items-end justify-center gap-3 md:gap-6 max-w-2xl mx-auto mb-8 pt-10">
-              <div className="flex flex-col items-center">
-                <div className="rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-md p-4 md:p-6 text-center mb-2 w-24 md:w-32 shadow-[0_12px_40px_rgba(0,0,0,0.28)]">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-slate-300 to-slate-400 flex items-center justify-center mx-auto mb-2 shadow-lg">
-                    <Trophy className="h-6 w-6 md:h-7 md:w-7 text-white" />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-display font-bold text-white">
-                    2nd
-                  </h3>
-                  <div className="flex items-center justify-center gap-1 text-white/60">
-                    <HelpCircle className="h-4 w-4" />
-                    <span className="text-sm">Hidden</span>
-                  </div>
-                </div>
-                <div className="w-24 md:w-32 h-20 md:h-28 bg-gradient-to-t from-slate-400 to-slate-300 rounded-t-lg flex items-center justify-center shadow-lg">
-                  <span className="text-3xl md:text-4xl font-display font-bold text-white/90">
-                    2
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center -mt-6 md:-mt-8">
-                <div className="rounded-3xl border border-[#FA7518]/40 bg-white/[0.05] backdrop-blur-md p-4 md:p-6 text-center mb-2 w-28 md:w-36 shadow-[0_0_40px_rgba(250,117,24,0.12)]">
-                  <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-yellow-400 to-amber-500 flex items-center justify-center mx-auto mb-2 shadow-lg ring-4 ring-yellow-400/30">
-                    <Trophy className="h-7 w-7 md:h-8 md:w-8 text-white" />
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-display font-bold text-white">
-                    1st
-                  </h3>
-                  <div className="flex items-center justify-center gap-1 text-white/60">
-                    <HelpCircle className="h-4 w-4" />
-                    <span className="text-sm">Hidden</span>
-                  </div>
-                </div>
-                <div className="w-28 md:w-36 h-28 md:h-36 bg-gradient-to-t from-amber-500 to-yellow-400 rounded-t-lg flex items-center justify-center shadow-lg">
-                  <span className="text-4xl md:text-5xl font-display font-bold text-white/90">
-                    1
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <div className="rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-md p-4 md:p-6 text-center mb-2 w-24 md:w-32 shadow-[0_12px_40px_rgba(0,0,0,0.28)]">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-orange-300 to-orange-400 flex items-center justify-center mx-auto mb-2 shadow-lg">
-                    <Trophy className="h-6 w-6 md:h-7 md:w-7 text-white" />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-display font-bold text-white">
-                    3rd
-                  </h3>
-                  <div className="flex items-center justify-center gap-1 text-white/60">
-                    <HelpCircle className="h-4 w-4" />
-                    <span className="text-sm">Hidden</span>
-                  </div>
-                </div>
-                <div className="w-24 md:w-32 h-16 md:h-24 bg-gradient-to-t from-orange-400 to-orange-300 rounded-t-lg flex items-center justify-center shadow-lg">
-                  <span className="text-3xl md:text-4xl font-display font-bold text-white/90">
-                    3
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <p className="text-center text-white/60">
-              Certificates for all participants • Goodies from sponsors • Networking opportunities
-            </p>
-          </div>
-        </section> */}
 
         {/* Timeline */}
         <section className="relative z-10 py-14 md:py-18 border-t border-white/5">

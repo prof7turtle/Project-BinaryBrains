@@ -105,10 +105,10 @@ const FeaturesSection = () => {
             </p>
           </div>
 
-          <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/65 backdrop-blur-md">
+          {/* <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/65 backdrop-blur-md">
             <Sparkles className="h-4 w-4 text-[#F87014]" />
             6 focused tracks. One builder community.
-          </div>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:auto-rows-[minmax(220px,auto)] xl:grid-cols-6">
