@@ -55,19 +55,12 @@ const pastEvents = [
 const upcomingEvents = [
   {
     title: "AlgoHeist 2026",
-    date: "28th February 2026",
+    date: "22nd March 2026",
     location: "DIT Pune, Campus",
     description:
       "Our flagship DSA coding competition with exciting prizes and opportunities.",
     featured: true,
-  },
-  {
-    title: "Web3 Workshop",
-    date: "March 2026",
-    location: "Online",
-    description: "Introduction to blockchain development and smart contracts.",
-    featured: false,
-  },
+  }
 ];
 
 const Events = () => {
