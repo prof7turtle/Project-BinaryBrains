@@ -57,16 +57,6 @@ const HackathonCTA = () => {
                   <ArrowRight className="h-5 w-5" />
                 </Button>
               </Link>
-
-              <Link to="/sponsors">
-                <Button
-                  variant="outline"
-                  size="xl"
-                  className="border-white/15 bg-white/5 text-white backdrop-blur-md hover:bg-white/10 hover:text-white"
-                >
-                  Sponsor This Event
-                </Button>
-              </Link>
             </div>
           </div>
         </div>

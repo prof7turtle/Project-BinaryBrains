@@ -59,16 +59,6 @@ const HeroSection = () => {
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </Link>
-
-            <Link to="/sponsors" className="w-full sm:w-auto">
-              <Button
-                size="xl"
-                variant="outline"
-                className="w-full border-white/15 bg-white/5 text-white backdrop-blur-md hover:bg-white/10 hover:text-white sm:w-auto"
-              >
-                Become a Sponsor
-              </Button>
-            </Link>
           </div>
         </div>
       </div>
